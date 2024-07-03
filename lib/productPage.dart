@@ -8,27 +8,32 @@ class ProductPage extends StatelessWidget {
     const ProductCardWidget(
       imageCard: 'assets/shoe1.png',
       cardTitle: 'Adidas Shoe',
-      cardPrice: 'Rs. 200,000',
+      cardPrice: '₦ 200,000',
     ),
     const ProductCardWidget(
       imageCard: 'assets/shoe1.png',
       cardTitle: 'Adidas Shoe',
-      cardPrice: 'Rs. 200,000',
+      cardPrice: '₦ 200,000',
     ),
     const ProductCardWidget(
       imageCard: 'assets/shoe2.png',
       cardTitle: 'Adidas Shoe',
-      cardPrice: 'Rs. 200,000',
+      cardPrice: '₦ 200,000',
     ),
     const ProductCardWidget(
       imageCard: 'assets/watch.png',
       cardTitle: 'Smart Watch',
-      cardPrice: 'Rs. 5,000',
+      cardPrice: '₦ 5,000',
     ),
     const ProductCardWidget(
       imageCard: 'assets/shoe1.png',
       cardTitle: 'Adidas Shoe',
-      cardPrice: 'Rs. 200,000',
+      cardPrice: '₦ 200,000',
+    ),
+    const ProductCardWidget(
+      imageCard: 'assets/watch.png',
+      cardTitle: 'Smart Watch',
+      cardPrice: '₦ 5,000',
     ),
   ];
   @override

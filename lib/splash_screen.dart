@@ -32,8 +32,8 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'WELCOME \n TO \n SHOPPERS',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              'Welcome to shoppers',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
             ),
             Image.asset('assets/splash.png')
           ],
