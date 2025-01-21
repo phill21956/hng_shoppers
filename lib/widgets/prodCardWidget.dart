@@ -16,12 +16,12 @@ class ProductCardWidget extends StatelessWidget {
       elevation: 3,
       child: Column(mainAxisSize: MainAxisSize.min, children: [
         Expanded(
-          child: Image.asset(
+          child: Image.network(
             imageCard,
             fit: BoxFit.cover,
           ),
         ),
-         Padding(
+        Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -29,10 +29,10 @@ class ProductCardWidget extends StatelessWidget {
               children: [
                 Text(
                   cardTitle,
-                  style:const TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  cardPrice,
+                  "₦ $cardPrice",
                 ),
               ],
             )),

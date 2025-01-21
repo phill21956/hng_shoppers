@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hng_shoppers/bottom_nav_bar.dart';
+import 'package:hng_shoppers/views/bottom_nav_bar.dart';
 
 class CheckOutPage extends StatelessWidget {
   const CheckOutPage({super.key});
