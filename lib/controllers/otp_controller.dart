@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hng_shoppers/constants/toast.dart';
 import 'package:hng_shoppers/controllers/login_controller.dart';

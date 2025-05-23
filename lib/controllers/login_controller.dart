@@ -54,4 +54,5 @@ class LoginController extends GetxController {
       toast(message: 'An error occurred: $e');
     }
   }
+
 }

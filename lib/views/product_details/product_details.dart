@@ -6,7 +6,7 @@ import 'package:hng_shoppers/views/product_details/components/rounded_button_wid
 
 class ProductDetailsPage extends StatelessWidget {
   const ProductDetailsPage({
-    super.key,  
+    super.key,
     required this.imageUrl,
     required this.name,
     required this.productId,
@@ -17,6 +17,7 @@ class ProductDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(ProductDetailsController());
+    print('prodId - $productId');
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(

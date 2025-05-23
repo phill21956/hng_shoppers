@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hng_shoppers/controllers/login_controller.dart';
-import 'package:hng_shoppers/views/auth/otp_page.dart';
 import 'package:hng_shoppers/views/auth/sign_up.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -77,6 +76,7 @@ class SignInScreen extends StatelessWidget {
                                 value;
                           },
                         ),
+                       
                         const SizedBox(height: 16.0),
                         Obx(
                           () => ElevatedButton(

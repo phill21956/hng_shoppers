@@ -5,6 +5,7 @@ import 'package:hng_shoppers/constants/toast.dart';
 import 'package:hng_shoppers/controllers/login_controller.dart';
 import 'package:hng_shoppers/controllers/sign_up_controller.dart';
 import 'package:hng_shoppers/models/cart_model.dart';
+import 'package:hng_shoppers/models/error_response_model.dart';
 import 'package:hng_shoppers/network/service_call.dart';
 import 'package:hng_shoppers/views/bottom_nav_bar.dart';
 
@@ -23,12 +24,14 @@ class ProductDetailsController extends GetxController {
         var orders = cartItemModelFromJson(res.body);
         return orders.orders;
       } else {
-        errorResponseMethod(res);
+        var responseData = errorResponseModelFromJson(res.body);
+        // toast(message: ' ${responseData.message}');
+        
       }
       return [];
     } catch (e) {
       print('ddata - $e');
-      toast(message: 'An error occurred: $e');
+      // toast(message: 'An error occurred: $e');
       return [];
     }
   }

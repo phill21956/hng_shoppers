@@ -77,9 +77,9 @@ class ProductController extends GetxController {
         url: 'product/getProducts',
       );
       if (res.statusCode == 200) {
-        var getProducts = getProductModelFromJson(res.body);
+        var getProduct = getProductModelFromJson(res.body);
 
-        return getProducts.products;
+        return getProduct.products;
       } else {
         errorResponseMethod(res);
       }

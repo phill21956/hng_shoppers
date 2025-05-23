@@ -40,6 +40,7 @@ class SignUpScreen extends StatelessWidget {
                       CustomTextFormField(
                         controller: controller.nameController.value,
                         hintText: 'Full name',
+                        textInputAction: TextInputAction.next,
                         onChanged: (value) {
                           controller.nameController.value.text = value;
                         },
@@ -55,6 +56,7 @@ class SignUpScreen extends StatelessWidget {
                         controller: controller.emailController.value,
                         hintText: 'Email',
                         keyboardType: TextInputType.emailAddress,
+                        textInputAction: TextInputAction.next,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             return 'Please enter your email address';
@@ -74,6 +76,7 @@ class SignUpScreen extends StatelessWidget {
                       CustomTextFormField(
                         controller: controller.passwordController.value,
                         hintText: 'Password',
+                        textInputAction: TextInputAction.next,
                         obscureText: true,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -94,6 +97,7 @@ class SignUpScreen extends StatelessWidget {
                         controller: controller.confirmPasswordController.value,
                         hintText: 'Confirm Password',
                         obscureText: true,
+                        textInputAction: TextInputAction.done,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             return 'Please enter your password';
@@ -182,7 +186,8 @@ class CustomTextFormField extends StatelessWidget {
       this.validator,
       this.onChanged,
       this.keyboardType,
-      this.obscureText = false});
+      this.obscureText = false,
+      this.textInputAction});
 
   final TextEditingController? controller;
   final String? hintText;
@@ -190,6 +195,7 @@ class CustomTextFormField extends StatelessWidget {
   final void Function(String)? onChanged;
   final TextInputType? keyboardType;
   final bool obscureText;
+  final TextInputAction? textInputAction;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -209,6 +215,7 @@ class CustomTextFormField extends StatelessWidget {
       obscureText: obscureText,
       validator: validator,
       onChanged: onChanged,
+      textInputAction: textInputAction,
     );
   }
 }
